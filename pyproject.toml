@@ -1,0 +1,30 @@
+[project]
+name = "pdf-audiobook"
+version = "0.1.0"
+description = "Convert PDF to Audiobook using local Qwen3 and EdgeTTS"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "edge-tts>=6.1.15",
+    "ollama>=0.1.6",
+    "marker-pdf>=1.0.0",
+    "click>=8.1.7",
+    "rich>=13.7.0",
+    "tqdm>=4.66.1",
+    "pydantic>=2.6.1",
+]
+
+[project.scripts]
+pdf-audio = "src.main:main"
+
+[tool.ruff]
+line-length = 88
+target-version = "py39"
+
+[tool.mypy]
+python_version = "3.9"
+strict = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
