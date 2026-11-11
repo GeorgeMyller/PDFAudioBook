@@ -27,8 +27,8 @@ Este projeto recomenda o uso do gerenciador de pacotes [uv](https://github.com/a
 
 ```bash
 # Clone o repositório
-git clone https://github.com/GeorgeMyller/pdf-audiobook.git
-cd pdf-audiobook
+git clone https://github.com/GeorgeMyller/PDFAudioBook.git
+cd PDFAudioBook
 
 # Crie o ambiente e instale as dependências
 uv venv
